@@ -1,0 +1,197 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>html5문서</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/menu01_tab.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="styles.css">
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/main_tab.js"></script>
+
+<script>
+   $(function(){
+         $(".navi>li>a").on("mouseenter",function(){
+            $(".navi li a").css("background","none");
+            $(".sub").stop().slideUp(500);
+            $(".navi li a").css("text-decoration","none");
+            $(".navi li a").css("color","gray");
+            $(this).css("background","#0c054e"); //커서올린부분 배경색 
+            $(this).css("text-decoration","underline").css("color","#fff");//커서메뉴 그린밑줄
+            $(this).next().stop().slideDown(500);		//내려오는메뉴
+      });
+      $(".menu").on("mouseleave",function(){
+         $(".navi li a").css("background","none");
+         $(".sub").stop().slideUp(500);
+         $(".navi li a").css("color","gray");
+         $(".navi li a").css("text-decoration", "none");
+      })
+    
+   });
+   </script></head>
+	
+<body>
+<header>
+	<h2><a href="#"><img src="image/amazon01.jpg" alt=""></a></h2>
+	<div class="search">
+		<input type="text" placeholder="">
+		<img src="image/search.png" alt="">
+	</div>
+	<img class="s" src="image/j2.png" alt="">
+	<img class="w" src="image/j3.png" alt="">
+	<img class="v" src="image/j1.png" alt="">
+</header>
+<nav id="menu">
+<ul class="navi">
+<li><a href="#">전체 카테고리</a>
+
+<ul class="sub sub2">
+<li><a href="#">패션의류/잡화</a></li>      
+<li><a href="#">뷰티</a></li>
+<li><a href="#">출산/유아동</a></li>
+<li><a href="#">식품</a></li>
+<li><a href="#">주방용품</a></li>
+<li><a href="#">생활용품</a></li>
+<li><a href="#">인테리어</a></li>
+<li><a href="#">디지털</a></li>
+<li><a href="#">취미</a></li>
+<li><a href="#">문구</a></li>
+<li><a href="#">반려동물</a></li>
+<li><a href="#">헬스/건강</a></li>
+
+
+</ul>
+</li>
+
+<li><a href="#">오늘의특가</a>
+<ul class="sub sub2">
+<li><a href="#">신제품</a></li>      
+<li><a href="#">베스트</a></li>
+<li><a href="#">세일</a></li>
+</ul>
+</li>
+<li><a href="#">베스트</a>
+<ul class="sub sub3">
+<li><a href="#">당첨자발표</a></li>      
+<li><a href="#">매장별이벤트</a></li>
+<li><a href="#">멤버십</a></li>
+</ul>
+</li>
+<li><a href="#">이벤트/쿠폰</a>
+<ul class="sub sub4">
+<li><a href="#">창업정보</a></li>      
+<li><a href="#">온라인창업</a></li>
+<li><a href="#">FAQ</a></li>
+</ul>
+</li>
+<li><a href="#">기프트카드</a>
+<ul class="sub sub5">
+<li><a href="#">Gallery</a></li>      
+<li><a href="#">홍보관</a></li>
+</ul>
+</li>
+<li><a href="#">고객서비스</a>
+<ul class="sub sub5">
+<li><a href="#">공지사항</a></li>      
+<li><a href="#">Q &amp; A</a></li>
+</ul>
+</li>
+<li><a href="#">프라임</a>
+<ul class="sub sub5">
+<li><a href="#">회사소개</a></li>      
+<li><a href="#">위치</a></li>
+</ul>
+</li>
+
+
+</ul>
+</nav>
+
+
+ 
+
+
+
+
+
+
+
+
+</header>
+   <div id="main_image">
+      <ul class="b2">
+         <li><img src="image/banner1.jpg" alt="메인이미지"></li>
+         <li><img src="image/banner2.jpg" alt="메인이미지"></li>
+         <li><img src="image/banner3.jpg" alt="메인이미지"></li>
+         <li><img src="image/banner1.jpg" alt="메인이미지"></li>
+      </ul>
+      
+      
+<div id="arrow">
+<a class="prev" href="#"><img src="image/arrow_l1.png" alt="이전"></a>
+<a class="next" href="#"><img src="image/arrow_r1.png" alt="다음"></a>	
+</div>
+
+<ul id="book_roll">
+   <li id="btn0"><a href="#"><img src="image/state_over.png" alt="활성화 상태"></a></li>
+   <li id="btn1"><a href="#">
+   <img src="image/state_out.png" alt="비활성화 상태"></a></li>
+   <li id="btn2"><a href="#">
+   <img src="image/state_out.png" alt="비활성화 상태"></a></li>
+   <li id="btn3"><a href="#">
+   <img src="image/state_out.png" alt="비활성화 상태"></a></li>
+</ul>
+</div>
+
+   <div id="content">
+   <h2>기획전 바로가기</h2>
+   <div class="middle1">
+      <ul class="middle">
+         <li><img src="image/img01.png"></li>
+         <li><img src="image/img02.png"></li>
+         <li><img src="image/img03.png"></li>
+         <li><img src="image/img04.png"></li>
+      </ul>
+   </div>
+   <div id="content2">
+      <h2>아마존 <span>라이브</span></h2>
+   </div>
+      <div class="live">
+         <div class="livebox1">
+            <div class="youtubeWrap">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/-DgIjMVHvTI?si=7oy1vPt_0wNIOyPs" frameborder="0" allowfullscreen></iframe>
+            </div>
+         </div>
+         <div class="livebox2"></div>
+         <div id="livemore"> 기획전 전체보기 > </div>
+      
+      </div>
+      <div id="box33"></div>
+      <div id="content3">
+         <h2>아마존에서 쇼핑하기</h2>
+      </div>
+      <div class="shopbox1">
+         <div class="shopone"></div>
+         <div id="shoparrow">
+            <a class="prev" href="#"><img src="image/arrow_l1.png" alt="이전"></a>
+            <a class="next" href="#"><img src="image/arrow_r1.png" alt="다음"></a>	
+            </div>
+      </div>
+      <div class="shopbox2"></div>
+
+
+   
+   
+   </div>
+   
+</body>
+</html>
+
+
